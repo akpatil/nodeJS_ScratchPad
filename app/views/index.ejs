@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title><%= title %></title>
+</head>
+<body>
+	<% if(userFullName){ %>
+		<h2>Hello, <%= userFullName %> </h2>
+		<a href="/signout">Sign Out</a>
+	<% }else{ %>
+		<a href="/signup">Sign Up</a>
+		<a href="/signin">Sign In</a>
+	<% } %>
+<section ng-include="'/example/views/example.client.view.html'"></section>	
+</body>
+<script type="text/javascript" src="/lib/angular/angular.js"></script>
+<script type="text/javascript" src="/application.js"></script>
+<script type="text/javascript" src="/example/example.client.module.js"></script>
+</html>

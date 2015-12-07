@@ -1,0 +1,7 @@
+{
+	"name": "Scratch-pad",
+	"version": "0.0.6",
+	"dependencies": {
+		"angular": "~1.2"
+	}
+}
