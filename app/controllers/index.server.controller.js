@@ -1,6 +1,7 @@
 exports.render = function(req, res){
 	res.render('index', {
 		title: 'Hello World',
-		userFullName: req.user ? req.user.fullname:''
+		userFullName: req.user ? req.user.fullname:'',
+		user: JSON.stringify(req.user)
 	});
 };

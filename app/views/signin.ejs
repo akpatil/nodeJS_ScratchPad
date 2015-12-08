@@ -5,7 +5,7 @@
 </head>
 <body>
 <% for(var i in messages){ %>
-	<div class="flash">{%= messages[i] %}</div>
+	<div class="flash"><%= messages[i] %></div>
 <% } %>
 <div class="container">
 	<form action="/signin" method="post">
